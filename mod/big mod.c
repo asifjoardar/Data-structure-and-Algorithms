@@ -3,7 +3,7 @@ typedef long long int lli;
 lli asif(lli n,lli p,lli d)
 {
     lli x;
-    if(p==0) return 1;
+    if(p==0) return 1%d;
     if(p%2==0)
     {
         x=asif(n,p/2,d);
