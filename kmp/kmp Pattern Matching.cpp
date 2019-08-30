@@ -37,7 +37,7 @@ vector<ll> createtemparray(string pattern)
     {
         if(pattern[index]==pattern[i])
         {
-            lps[i]=i+1;
+            lps[i]=index+1;
             index++;
             i++;
         }
