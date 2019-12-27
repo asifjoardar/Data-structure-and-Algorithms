@@ -33,7 +33,7 @@ int ncr(int n,int r)
 {
     if(n==r||r==0) return 1;
     if(r==1) return n;
-    if(dp[n][r]>-1)
+    if(dp[n][r]>0)
         return dp[n][r];
     return dp[n][r]=ncr(n-1,r-1)+ncr(n-1,r);
 }
@@ -46,9 +46,6 @@ int main()
     #endif
     fio();
     ll i,j;
-    for(i=0;i<500;i++)
-        for(j=0;j<500;j++)
-            dp[i][j]=-1;
-    cout<<ncr(5,0)<<endl;
+    cout<<ncr(5,2)<<endl;
     return 0;
 }
