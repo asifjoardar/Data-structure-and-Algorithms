@@ -56,7 +56,7 @@ ll lis(ll a[],ll n)
         }
         else
         {
-            ll pos=bsearch(a,0,len-1,a[i],t);
+            ll pos=bsearch(a,-1,len-1,a[i],t);
             p[i]=t[pos-1];
             t[pos]=i;
         }
